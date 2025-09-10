@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Front End -Nicolas Almir</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/utilities/animations.css">
+    <link rel="stylesheet" href="css/utilities/colors.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">Nicolas a<span>.dev</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#pricing" class="nav-link">Orçamento</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <em id="theme-label">Modo Escuro</em>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title animate-fade-in">Desenvolvimento Front-End <span>de Qualidade</span></h1>
+        <p class="hero-description animate-fade-in-delay">Crio experiências digitais incríveis com foco em performance, acessibilidade e designs modernos.</p>
+        <div class="hero-buttons animate-fade-in-delay-2">
+            <a href="https://nicolass4.github.io/portfolio-nicolas-almir/" class="btn btn-primary">Ver Portfólio</a>
+            <a href="#contact" class="btn btn-secondary">Solicitar Orçamento</a>
+        </div>
+    </div>
+    <div class="hero-cards-horizontal">
+        <div class="hero-card">
+            <i class="fas fa-code"></i>
+            <h3>Desenvolvimento Web</h3>
+        </div>
+        <div class="hero-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Design Responsivo</h3>
+        </div>
+        <div class="hero-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>UI/UX Design</h3>
+        </div>
+    </div>
+</section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Meus Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites e aplicações web com as melhores tecnologias do mercado: HTML, CSS, JavaScript e React.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design Responsivo</h3>
+                    <p>Desenvolvimento adaptado para todos os dispositivos, garantindo a melhor experiência independente do tamanho da tela.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Criação de interfaces intuitivas e agradáveis, com foco na experiência do usuário e prática de design.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Otimização de Performance</h3>
+                    <p>Aceleração de sites e aplicações para melhor rankeamento SEO e experiência de usuário superior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Orçamento e Domínios</h2>
+            <div class="pricing-description">
+                <p>Meus orçamentos são calculados com base no nível de exigência técnica do projeto + custo do domínio. Todo projeto aceito passa por análise de orçamento específica para manutenções e alterações, com valores a partir de R$ 40,00.</p>
+            </div>
+            
+            <div class="pricing-content">
+                <div class="technical-levels">
+                    <h3>Níveis de Exigência Técnica</h3>
+                    <div class="level-card">
+                        <h4>Nível 1 - Básico</h4>
+                        <p>Site institucional simples, landing pages</p>
+                        <span class="price">A partir de R$ 500,00</span>
+                    </div>
+                    <div class="level-card">
+                        <h4>Nível 2 - Intermediário</h4>
+                        <p>Sites com funcionalidades dinâmicas, formulários, integrações simples</p>
+                        <span class="price">A partir de R$ 1000,00</span>
+                    </div>
+                    <div class="level-card">
+                        <h4>Nível 3 - Avançado</h4>
+                        <p>Aplicações web complexas, sistemas com painel administrativo </p>
+                        <span class="price">A partir de R$ 2.000,00</span>
+                    </div>
+                </div>
+                
+                <div class="domain-info">
+                    <h3>Registro de Domínio (.com.br)</h3>
+                    <div class="domain-table">
+                        <hr>
+                        <div class="domain-row">
+                            <span>1 ano</span>
+                            <span>R$ 40,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row">
+                            <span>2 anos</span>
+                            <span>R$ 76,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row">
+                            <span>3 anos</span>
+                            <span>R$ 112,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row">
+                            <span>5 anos</span>
+                            <span>R$ 184,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row"">
+                            <span>6 anos</span>
+                            <span>R$ 220,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row"">
+                            <span>7 anos</span>
+                            <span>R$ 256,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row">
+                            <span>8 anos</span>
+                            <span>R$ 292,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row">
+                            <span>9 anos</span>
+                            <span>R$ 328,00</span>
+                        </div>
+                        <hr>
+                        <div class="domain-row">
+                            <span>10 anos</span>
+                            <span>R$ 364,00</span>
+                        </div>
+                    </div>
+                    <div class="domain-warning">
+                        <p><strong>Atenção:</strong> O Registro.br nunca envia boletos por e-mail. Todas as cobranças são emitidas exclusivamente através do sistema oficial. <a href="#" id="show-domain-info">Saiba como identificar cobranças legítimas.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos conversar sobre seu projeto?</h3>
+                    <p>Estou disponível para novos desafios e projetos interessantes. Entre em contato para solicitar um orçamento ou tirar dúvidas.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nicolas.almir.br@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Nicolas Almir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">Nicolas a<span>.dev</span></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#pricing">Orçamento</a>
+                    <a href="https://nicolass4.github.io/portfolio-nicolas-almir/">Portfólio</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nicolas-almir-92773527a/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/NicolasS4"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/nick_snts_0/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nicolas a.dev - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Domain Info Modal -->
+    <div class="modal" id="domain-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Informações sobre Domínios .br</h2>
+            <div class="modal-body">
+                <h3>Como identificar cobranças legítimas do Registro.br</h3>
+                <ul>
+                    <li>O Registro.br nunca envia boletos por e-mail ou correio</li>
+                    <li>Todas as cobranças são emitidas exclusivamente através do sistema oficial</li>
+                    <li>Verifique sempre o authenticity do boleto no Internet Banking</li>
+                    <li>Entre em contato com o Registro.br em caso de dúvidas</li>
+                </ul>
+                
+                <h3>Preços de domínios .br (por ano)</h3>
+                <p>Os valores são os mesmos desde 2017:</p>
+                <ul>
+                    <li>1 ano: R$ 40,00</li>
+                    <li>2 anos: R$ 76,00 (R$ 38,00/ano)</li>
+                    <li>3 anos: R$ 112,00 (R$ 37,33/ano)</li>
+                    <li>5 anos: R$ 184,00 (R$ 36,80/ano)</li>
+                    <li>10 anos: R$ 364,00 (R$ 36,40/ano)</li>
+                </ul>
+                
+                <p class="note"><strong>Nota:</strong> Os domínios .NOM.BR têm preço diferenciado: R$ 40,00 pelo período mínimo de 3 anos e R$ 12,00 para cada ano adicional.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/modules/theme-switcher.js"></script>
+    <script src="js/modules/modal.js"></script>
+    <script src="js/modules/form-validation.js"></script>
+    <script src="js/utils/animations.js"></script>
+</body>
+</html>
